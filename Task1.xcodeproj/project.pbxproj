@@ -8,21 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0EDD06EB2932053400FB574B /* Task1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD06EA2932053400FB574B /* Task1App.swift */; };
-		0EDD06ED2932053400FB574B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD06EC2932053400FB574B /* ContentView.swift */; };
 		0EDD06EF2932053600FB574B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EDD06EE2932053600FB574B /* Assets.xcassets */; };
 		0EDD06F22932053600FB574B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EDD06F12932053600FB574B /* Preview Assets.xcassets */; };
 		0EDD06F42932053600FB574B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD06F32932053600FB574B /* Persistence.swift */; };
 		0EDD06F72932053600FB574B /* Task1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD06F52932053600FB574B /* Task1.xcdatamodeld */; };
+		0EDD06FF2932056300FB574B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDD06FE2932056300FB574B /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0EDD06E72932053400FB574B /* Task1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDD06EA2932053400FB574B /* Task1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task1App.swift; sourceTree = "<group>"; };
-		0EDD06EC2932053400FB574B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0EDD06EE2932053600FB574B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EDD06F12932053600FB574B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EDD06F32932053600FB574B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0EDD06F62932053600FB574B /* Task1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task1.xcdatamodel; sourceTree = "<group>"; };
+		0EDD06FE2932056300FB574B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +55,10 @@
 		0EDD06E92932053400FB574B /* Task1 */ = {
 			isa = PBXGroup;
 			children = (
+				0EDD06FD2932054C00FB574B /* screens */,
 				0EDD06EA2932053400FB574B /* Task1App.swift */,
-				0EDD06EC2932053400FB574B /* ContentView.swift */,
-				0EDD06EE2932053600FB574B /* Assets.xcassets */,
 				0EDD06F32932053600FB574B /* Persistence.swift */,
-				0EDD06F52932053600FB574B /* Task1.xcdatamodeld */,
+				0EDD07002932057500FB574B /* apputils */,
 				0EDD06F02932053600FB574B /* Preview Content */,
 			);
 			path = Task1;
@@ -71,6 +70,23 @@
 				0EDD06F12932053600FB574B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0EDD06FD2932054C00FB574B /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				0EDD06FE2932056300FB574B /* HomeScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		0EDD07002932057500FB574B /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				0EDD06EE2932053600FB574B /* Assets.xcassets */,
+				0EDD06F52932053600FB574B /* Task1.xcdatamodeld */,
+			);
+			path = apputils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EDD06FF2932056300FB574B /* HomeScreen.swift in Sources */,
 				0EDD06F42932053600FB574B /* Persistence.swift in Sources */,
-				0EDD06ED2932053400FB574B /* ContentView.swift in Sources */,
 				0EDD06F72932053600FB574B /* Task1.xcdatamodeld in Sources */,
 				0EDD06EB2932053400FB574B /* Task1App.swift in Sources */,
 			);
